@@ -12,7 +12,11 @@
     </main>
     <div>
       <ul>
-        <TodoListItem></TodoListItem>
+        <TodoListItem
+          v-for="(todoItem, i) in todoItems"
+          :key="i"
+          :todoItem="todoItem"
+        ></TodoListItem>
       </ul>
     </div>
   </div>
