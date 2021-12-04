@@ -6,12 +6,13 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import { Todo } from "@/App.vue";
+import Vue, { PropType } from "vue";
 
 export default Vue.extend({
   props: {
     todoItem: {
-      type: String,
+      type: Object as PropType<Todo>,
       required: true,
     },
     todoIndex: {

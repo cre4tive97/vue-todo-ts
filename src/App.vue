@@ -42,7 +42,7 @@ const storage = {
   },
 };
 
-interface Todo {
+export interface Todo {
   title: string;
   done: boolean;
 }
