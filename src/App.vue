@@ -1,14 +1,13 @@
 <template>
-  <div id="app">'hello'</div>
+  <div>
+    <h1>Vue Todo with Typescript</h1>
+  </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
 
-export default Vue.extend({
-  name: "App",
-  components: {},
-});
+export default Vue.extend({});
 </script>
 
-<style></style>
+<style scoped></style>
