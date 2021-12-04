@@ -1,6 +1,6 @@
 <template>
   <li>
-    <span> {{ todoItem }}</span>
+    <span class="item"> {{ todoItem }}</span>
     <button @click="removeItem">삭제</button>
   </li>
 </template>
@@ -27,4 +27,11 @@ export default Vue.extend({
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+.item {
+  cursor: pointer;
+}
+.complete {
+  text-decoration: line-through;
+}
+</style>
