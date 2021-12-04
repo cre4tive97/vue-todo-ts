@@ -21,7 +21,7 @@ export default Vue.extend({
     };
   },
   methods: {
-    updateTodoText(currentValue: any) {
+    updateTodoText(currentValue: string) {
       this.todoText = currentValue;
     },
     addTodoItem() {
