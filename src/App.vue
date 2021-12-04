@@ -32,12 +32,12 @@ import TodoListItem from "./components/TodoListItem.vue";
 
 const STORAGE_KEY = "vue-todo-ts-v1";
 const storage = {
-  fetch() {
+  fetch(): Todo[] {
     const todoItems = localStorage.getItem(STORAGE_KEY) || "[]";
     const result = JSON.parse(todoItems);
     return result;
   },
-  save(todoItems: any[]) {
+  save(todoItems: Todo[]) {
     const parsed = JSON.stringify(todoItems);
     localStorage.setItem(STORAGE_KEY, parsed);
   },
